@@ -1,0 +1,167 @@
+/* Fuentes y estilos generales */
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #FAF3E0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #FFB997;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-family: "Honk", sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Navegación */
+nav {
+    background-color: #FFD5C2;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: #5A3931;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7D4E40;
+}
+
+/* Carousel */
+.carousel {
+    margin-bottom: 20px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Main Section */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sales-section h2 {
+    color: #FF7A5A;
+    font-family: "DM Serif Display", serif;
+    font-size: 1.8rem;
+}
+
+.Practicando {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #5A3931;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFD5C2;
+    border: 2px solid #FF7A5A;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #5A3931;
+}
+
+.frutas {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.offers-section h3 {
+    color: #FF7A5A;
+    font-size: 1.5rem;
+}
+
+.offers-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.offers-section li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #FFB997;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h4 {
+    font-size: 1.2rem;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-links li {
+    margin: 5px 0;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header, nav, footer {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
